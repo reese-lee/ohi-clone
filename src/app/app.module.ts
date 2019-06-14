@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { AppComponent } from './app.component';
+import { ParallaxBannerComponent } from './parallax-banner/parallax-banner.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ParallaxBannerComponent
   ],
   imports: [
     BrowserModule,
