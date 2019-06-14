@@ -9,88 +9,90 @@
 
             <!-- Navbar brand -->
             <mdb-navbar-brand><a class="navbar-brand" href="#">
-            <ul class="navbar-nav ml-auto nav-flex-icons">
-              <li class="nav-item avatar dropdown" dropdown>
-                  <img src="https://i.vimeocdn.com/channel/273110_980?mh=250" alt="" class="img-fluid rounded-circle z-depth-0">
+              <ul class="navbar-nav ml-auto nav-flex-icons">
+                <li class="nav-item avatar dropdown" dropdown>
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJyc1wPl36IWsc7Y-OcA8b7fvbW9Brgab8pMsB_Mvbfa3RswBJ" alt="OHI Logo" class="img-fluid rounded-circle z-depth-0">
                 </li>
-            </ul>
+              </ul>
             </a></mdb-navbar-brand>
 
-              <!-- Collapsible content -->
-              <links>
-                <!-- Links -->
-                <ul class="navbar-nav ml-auto">
+            <!-- Collapsible content -->
+            <links>
+              <!-- Links -->
+              <ul class="navbar-nav ml-auto" id="topNav">
+                <li class="nav-item dropdown" dropdown>
+                  <a dropdownToggle mdbWavesEffect type="button" class="nav-link  waves-light" mdbWavesEffect>
+                    GLOBAL SCORES<span class="caret"></span></a>
+                    <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
+                      <a class="dropdown-item waves-light" mdbWavesEffect href="#">Scores</a>
+                      <a class="dropdown-item waves-light" mdbWavesEffect href="#">Annual Scores and Rankings</a>
+                      <a class="dropdown-item waves-light" mdbWavesEffect href="#">Key Findings</a>
+                      <a class="dropdown-item waves-light" mdbWavesEffect href="#">Maps</a>
+                      <a class="dropdown-item waves-light" mdbWavesEffect href="#">Downloads</a>
+                    </div>
+                  </li>
+
+                  <li class="nav-item active">
+                    <a class="nav-link waves-light" mdbWavesEffect>OHI+<span class="sr-only">(current)</span></a>
+                  </li>
+
                   <li class="nav-item dropdown" dropdown>
-                    <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
-                      GLOBAL SCORES<span class="caret"></span></a>
+                    <a dropdownToggle mdbWavesEffect type="button" class="nav-link  waves-light" mdbWavesEffect>
+                      METHODOLOGY<span class="caret"></span></a>
                       <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
-                        <a class="dropdown-item waves-light" mdbWavesEffect href="#">Scores</a>
-                        <a class="dropdown-item waves-light" mdbWavesEffect href="#">Annual Scores and Rankings</a>
-                        <a class="dropdown-item waves-light" mdbWavesEffect href="#">Key Findings</a>
-                        <a class="dropdown-item waves-light" mdbWavesEffect href="#">Maps</a>
-                        <a class="dropdown-item waves-light" mdbWavesEffect href="#">Downloads</a>
+                        <a class="dropdown-item waves-light" mdbWavesEffect href="#">Methods Overview</a>
+                        <a class="dropdown-item waves-light" mdbWavesEffect href="#">Goals</a>
+                        <a class="dropdown-item waves-light" mdbWavesEffect href="#">Components</a>
                       </div>
                     </li>
 
-                    <li class="nav-item active">
-                      <a class="nav-link waves-light" mdbWavesEffect>OHI+<span class="sr-only">(current)</span></a>
-                    </li>
-
                     <li class="nav-item dropdown" dropdown>
-                      <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
-                         METHODOLOGY<span class="caret"></span></a>
+                      <a dropdownToggle mdbWavesEffect type="button" class="nav-link  waves-light" mdbWavesEffect>
+                        NEWS<span class="caret"></span></a>
                         <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
-                          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Methods Overview</a>
-                          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Goals</a>
-                          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Components</a>
+                          <a class="dropdown-item waves-light" mdbWavesEffect href="#">All News</a>
+                          <a class="dropdown-item waves-light" mdbWavesEffect href="#">OHI At Work</a>
+                          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Success Stories</a>
+                          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Blue Economy</a>
+                          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Key Issues</a>
+                          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Archive</a>
                         </div>
                       </li>
 
                       <li class="nav-item dropdown" dropdown>
-                        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
-                           NEWS<span class="caret"></span></a>
+                        <a dropdownToggle mdbWavesEffect type="button" class="nav-link  waves-light" mdbWavesEffect>
+                          ABOUT<span class="caret"></span></a>
                           <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
-                            <a class="dropdown-item waves-light" mdbWavesEffect href="#">All News</a>
-                            <a class="dropdown-item waves-light" mdbWavesEffect href="#">OHI At Work</a>
-                            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Success Stories</a>
-                            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Blue Economy</a>
-                            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Key Issues</a>
-                            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Archive</a>
+                            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Team</a>
+                            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Contributors</a>
+                            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Sustaining Partners</a>
+                            <a class="dropdown-item waves-light" mdbWavesEffect href="#">FAQ</a>
+                            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Glossary</a>
+                            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Contact</a>
                           </div>
                         </li>
 
-                        <li class="nav-item dropdown" dropdown>
-                          <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
-                            ABOUT<span class="caret"></span></a>
-                            <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
-                              <a class="dropdown-item waves-light" mdbWavesEffect href="#">Team</a>
-                              <a class="dropdown-item waves-light" mdbWavesEffect href="#">Contributors</a>
-                              <a class="dropdown-item waves-light" mdbWavesEffect href="#">Sustaining Partners</a>
-                              <a class="dropdown-item waves-light" mdbWavesEffect href="#">FAQ</a>
-                              <a class="dropdown-item waves-light" mdbWavesEffect href="#">Glossary</a>
-                              <a class="dropdown-item waves-light" mdbWavesEffect href="#">Contact</a>
-                            </div>
-                          </li>
+                      </ul>
+                      <!-- Links -->
+                    </links>
+                    <!-- Collapsible content -->
 
-                        </ul>
-                        <!-- Links -->
-                      </links>
-                      <!-- Collapsible content -->
+                  </mdb-navbar>
+                  <!--/.Navbar-->
+                  <ul>
 
-                    </mdb-navbar>
-                    <!--/.Navbar-->
-                    <ul>
-
-                    </ul>
-                  </header>
+                  </ul>
+                </header>
+                <div class="blurb">
                   <h2>OCEAN HEALTH INDEX</h2>
                   <h4>A healthy ocean sustainably delivers a range of benefits to people now and in the future. The Ocean Health Index is the comprehensive framework used to measure ocean health from global to local scales.</h4>
                 </div>
               </div>
             </div>
-
           </div>
-          <!-- our parallax stuff -->
-          <!-- <div appParallax [ratio]="-0.2" id="square"></div>
-          <div appParallax [ratio]="0.5" id="circle"></div>
-          <div appParallax [ratio]="0.9" id="rectangle"></div> -->
+
+        </div>
+        <!-- our parallax stuff -->
+        <!-- <div appParallax [ratio]="-0.2" id="square"></div>
+        <div appParallax [ratio]="0.5" id="circle"></div>
+        <div appParallax [ratio]="0.9" id="rectangle"></div> -->
