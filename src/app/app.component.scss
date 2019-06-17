@@ -5,6 +5,7 @@
   color: white;
   font-family: 'Nunito Sans', sans-serif;
 }
+
 #container{
   width: 100%;
 }
@@ -15,13 +16,13 @@
   width:auto;
   background-image:url('bg02.jpg');
   background-position:50% 50%;
-  position: fixed;
+  // position: fixed;
   z-index: -1;
   top: 0px;
   left: 0px;
-  /* width: 100px;
-  height: 100px; */
-  /* background-color: green; */
+  // width: 100px;
+  // height: 100px;
+  background-color: navy;
 }
 
 #topNav {
@@ -31,17 +32,101 @@
 
 .blurb {
   text-align: left;
-  margin-right: 30%;
+  margin-right: 29%;
   margin-left: 4%;
 }
 
 .blurbTitle {
-  font-size: 4.5rem;
+  font-size: 4.7rem;
   font-weight: 900;
 }
 
 #blurbCopy {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 200;
+}
 
+.bannerTitle {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
+  font-size: 2.6rem;
+  // margin-left: 5%;
+  color: navy;
+}
+
+.bannerTitle2 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
+  font-size: 2.6rem;
+  color: white;
+}
+
+.bannerCopy {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #24326c;
+}
+
+.bannerCopy2 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.image01 {
+  background-color: white;
+  margin-right: -5%;
+  padding-left: 5%;
+  padding-right: 29%;
+  padding-bottom: 5%;
+}
+
+.image02 {
+  background-color: #24326c;
+  padding-left: 5%;
+  padding-right: 29%;
+  padding-bottom: 5%;
+  background-image: url('jellyfish.png');
+  opacity: 0.9;
+  margin-right: 0%;
+}
+
+.md-button {
+  padding: 20px 20px 20px 20px;
+  margin: 6px 8px 6px 8px;
+  min-width: 88px;
+  border-radius: 3px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration:none;
+  border: transparent;
+  background-color: transparent;
+  outline: solid #24326c;
+  outline-width: .5;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
+  font-size: 0.9rem;
+  color: #24326c;
+}
+
+.md-button2 {
+  padding: 20px 20px 20px 20px;
+  margin: 6px 8px 6px 8px;
+  min-width: 88px;
+  border-radius: 3px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration:none;
+  border: transparent;
+  background-color: transparent;
+  outline: solid white;
+  outline-width: .5;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
+  font-size: 0.9rem;
+  color: white;
 }
