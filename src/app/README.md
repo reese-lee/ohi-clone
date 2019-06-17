@@ -1,43 +1,35 @@
-# _Hair Salon_
+# _Ocean Health Index Site Clone_
 
-#### _A program that allows the user to add their stylist employees and their clients, May 17, 2019._
+#### _A website rebuilt from the original [Ocean Health Index](http://www.oceanhealthindex.org/) website, June 14, 2019._
 
 #### By _**Reese Lee**_
 
 ## Description
 
-_A program for a hair salon owner to add their stylists, and those stylist's clients. An employee of that hair salon will be able to see the other employees, and each employee's clients._
+_A website that is rebuilt from the OHI website to practice Angular._
 
 ## Setup/Installation Requirements
 
-_To set up the database in MySQL:
+* _1. Clone from [GitHub repo](https://github.com/reese-lee/ohi-clone.git)_
+* _2. $cd ohi-clone_
+* _3. $npm install_
+* _4. $ng serve --o (this will automatically open the page)_
 
-* _> CREATE DATABASE reese_lee;
-* _> USE reese_lee;
-* _> CREATE TABLE clients (id serial PRIMARY KEY, clientName VARCHAR(255), stylist_id INT);
-* _> CREATE TABLE stylists (id serial PRIMARY KEY, name VARCHAR(255), specialty VARCHAR(255));
-* _> CREATE TABLE assignments (id serial PRIMARY KEY, stylist_id INT, specialty_id INT)
+## Specs
 
-_To download and import the database:_
+| Current Functionality        |
+| ------------- |
+| 1. The user can view the first half of the splash page |
+| 2. The top navigation bar hosts drop-down menus |
+| 3. The jellyfish element is the same one as the official site |
 
-* _Start MAMP or WAMP and click Open WebStart page in the MAMP/WAMP window._
-* _In the page that opens, select phpMyAdmin._
-* _Select the Import tab._
-* _Create a new database with the same name._
-* _Select your database file, and click Go._
-
-_To clone and launch the application:_
-
-* _Clone from GitHub
-* _$cd HairSalon.Solution/HairSalon_
-* _$git checkout specialty
-* _$dotnet restore to install packages from the .csproj file_
-* _$dotnet run to start the application_
-* _Launch [http://localhost:5000/](http://localhost:5000/) in your browser_
-
-## Known Bugs
-
-_ 
+| Functionality to be added        |
+| ------------- |:-------------:| -----:|
+| Hyperlink all links    |
+| Firebase implementation |
+| Jellyfish animation |
+| Hover effect for top nav-bar |
+| Add footer |
 
 ## Support and contact details
 
@@ -45,7 +37,7 @@ _Please contact reese.lee.cy@gmail.com if you run into any issues or have questi
 
 ## Technologies Used
 
-_C#_
+_JavaScript, HTML, CSS, Angular, Material, Bootstrap_
 
 ### License
 
