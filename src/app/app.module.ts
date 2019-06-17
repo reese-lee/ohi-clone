@@ -4,11 +4,15 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { AppComponent } from './app.component';
 import { ParallaxBannerComponent } from './parallax-banner/parallax-banner.component';
+import { FooterComponent } from './footer/footer.component';
+import { NewsComponent } from './news/news.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ParallaxBannerComponent
+    ParallaxBannerComponent,
+    FooterComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
