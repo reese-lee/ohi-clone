@@ -24,7 +24,7 @@ _A website that is rebuilt from the OHI website to practice Angular._
 | 3. The jellyfish element is the same one as the official site |
 
 | Functionality to be added        |
-| ------------- |:-------------:| -----:|
+| ------------- |
 | Hyperlink all links    |
 | Firebase implementation |
 | Jellyfish animation |
