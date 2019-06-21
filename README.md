@@ -22,7 +22,7 @@ _A website that is rebuilt from the OHI website to practice Angular._
 * _Provide a name for this project, "OHI-Clone"_
 * _Select your country/region from the drop-down menu_
 * _Select Add Firebase to your web app_
-* _$ npm install angularfire2@4.0.0-rc.0 firebase@^3.6.6 --save_
+* _$ npm install firebase angularfire2 --save_
 * _In your tsconfig.json file, add "types": [ "firebase" ] at the bottom_
 * _Create a file named api-keys.ts at the top of your project directory, and add it to the .gitignore file_
 * _Copy and past the following information into that file, replacing all "xxxx" placeholders with information from your Firebase project overview:_
