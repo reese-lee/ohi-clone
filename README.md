@@ -29,13 +29,13 @@ _A website that is rebuilt from the OHI website to practice Angular._
 
 | copy and paste the code below |
 | --- |
-| export const masterFirebaseConfig = {
+| { export const masterFirebaseConfig = {
     apiKey: "xxxx",
     authDomain: "xxxx.firebaseapp.com",
     databaseURL: "https://xxxx.firebaseio.com",
     storageBucket: "xxxx.appspot.com",
     messagingSenderId: "xxxx"
-  }; |
+  }; }|
 
 * _In your app.module.ts file, copy and paste the following to replace the entire file:_
 
