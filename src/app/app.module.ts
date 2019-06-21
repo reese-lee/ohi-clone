@@ -11,6 +11,7 @@ import { NewsComponent } from './news/news.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+// import { environment } from '../environments/environment';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -33,6 +34,7 @@ export const firebaseConfig = {
     HttpModule,
     // routing,
     AngularFireModule.initializeApp(firebaseConfig),
+    // AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule
   ],
   providers: [],
