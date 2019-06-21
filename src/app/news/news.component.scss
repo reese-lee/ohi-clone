@@ -1,0 +1,52 @@
+
+.imageWater {
+  background-image: url('water.jpg');
+  // height:40em;
+  background-size:cover;
+  width:auto;
+  background-position:50% 50%;
+  // position: fixed;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+}
+
+.newsComp {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
+  color: white;
+}
+
+.newsTitle {
+  font-weight: 900;
+  font-size: 3.5rem;
+  margin-left: 4%;
+}
+
+#col1A {
+  background-image: url('col1A.png');
+}
+
+#col1B {
+  background-image: url('col1B.png');
+}
+
+#col1C {
+  background-image: url('col1C.png');
+}
+
+#col2A {
+  background-image: url('col2A.png');
+}
+
+#col2B {
+  background-image: url('col2B.png');
+}
+
+#col2C {
+  background-image: url('col2C.png');
+}
+
+#news01 {
+  margin: 50px 50px 50px 50px;
+}
