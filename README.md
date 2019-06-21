@@ -10,9 +10,37 @@ _A website that is rebuilt from the OHI website to practice Angular._
 
 ## Setup/Installation Requirements
 
-* _1. Clone from [GitHub repo](https://github.com/reese-lee/ohi-clone.git)_
-* _2. $cd ohi-clone_
-* _3. $npm install_
+* _First, clone from [GitHub repo](https://github.com/reese-lee/ohi-clone.git)_
+* _$cd ohi-clone_
+* _$npm install_
+* _Set up your own Firebase credentials, as listed below_
+
+## Firebase Setup Instructions
+
+* _Login to Firebase, or create a new account_
+* _Click Create a New Project_
+* _Provide a name for this project, "OHI-Clone"_
+* _Select your country/region from the drop-down menu_
+* _Select Add Firebase to your web app_
+* _$ npm install angularfire2@4.0.0-rc.0 firebase@^3.6.6 --save_
+* _In your tsconfig.json file, add "types": [ "firebase" ] at the bottom_
+* _Create a file named api-keys.ts at the top of your project directory, and add it to the .gitignore file_
+* _Copy and past the following information into that file, replacing all "xxxx" placeholders with information from your Firebase project overview:_
+
+| copy and paste the code below |
+| --- |
+| export const masterFirebaseConfig = {
+    apiKey: "xxxx",
+    authDomain: "xxxx.firebaseapp.com",
+    databaseURL: "https://xxxx.firebaseio.com",
+    storageBucket: "xxxx.appspot.com",
+    messagingSenderId: "xxxx"
+  }; |
+
+* _In your app.module.ts file, copy and paste the following to replace the entire file:_
+
+
+
 * _4. $ng serve --o (this will automatically open the page)_
 
 ## Specs
