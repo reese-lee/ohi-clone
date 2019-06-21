@@ -26,22 +26,70 @@ _A website that is rebuilt from the OHI website to practice Angular._
 * _In your tsconfig.json file, add "types": [ "firebase" ] at the bottom_
 * _Create a file named api-keys.ts at the top of your project directory, and add it to the .gitignore file_
 * _Copy and past the following information into that file, replacing all "xxxx" placeholders with information from your Firebase project overview:_
-
-| copy and paste the code below |
-| --- |
-| { export const masterFirebaseConfig = {
-    apiKey: "xxxx",
-    authDomain: "xxxx.firebaseapp.com",
-    databaseURL: "https://xxxx.firebaseio.com",
-    storageBucket: "xxxx.appspot.com",
-    messagingSenderId: "xxxx"
-  }; }|
+```typescript
+ export const masterFirebaseConfig = {
+      apiKey: "xxxx",
+      authDomain: "xxxx.firebaseapp.com",
+      databaseURL: "https://xxxx.firebaseio.com",
+      storageBucket: "xxxx.appspot.com",
+      messagingSenderId: "xxxx"
+    };
+```
 
 * _In your app.module.ts file, copy and paste the following to replace the entire file:_
+```typescript
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+import { routing } from './app.routing';
+import { AppComponent } from './app.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { AboutComponent } from './about/about.component';
+import { MarketplaceComponent } from './marketplace/marketplace.component';
+import { AlbumDetailComponent } from './album-detail/album-detail.component';
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
 
-
-* _4. $ng serve --o (this will automatically open the page)_
+@NgModule({
+  declarations: [
+    AppComponent,
+    WelcomeComponent,
+    AboutComponent,
+    MarketplaceComponent,
+    AlbumDetailComponent
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    routing,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
+* _Return to your Firebase console, and go to the Database section. Select Realtime Database, and click on the Rules tab. Switch the "false" values to "true" on both properties (as seen below):_
+```
+{
+  "rules": {
+    ".read": "true",
+    ".write": "true"
+  }
+}
+```
+* _$ng serve --o (this will automatically open the page)_
 
 ## Specs
 
