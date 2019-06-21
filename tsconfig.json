@@ -24,6 +24,7 @@
       "angular-bootstrap-md/*": [
         "dist/angular-bootstrap-md/*"
       ]
-    }
+    },
+    "types": [ "firebase"] 
   }
 }
