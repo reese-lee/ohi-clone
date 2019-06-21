@@ -17,7 +17,7 @@ _A website that is rebuilt from the OHI website to practice Angular._
 
 ## Firebase Setup Instructions
 
-* _Login to Firebase, or create a new account_
+* _Login to [Firebase]("https://firebase.google.com/"), or create a new account_
 * _Click Create a New Project_
 * _Provide a name for this project, "OHI-Clone"_
 * _Select your country/region from the drop-down menu_
@@ -40,14 +40,13 @@ _A website that is rebuilt from the OHI website to practice Angular._
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { routing } from './app.routing';
 import { AppComponent } from './app.component';
-import { WelcomeComponent } from './welcome/welcome.component';
-import { AboutComponent } from './about/about.component';
-import { MarketplaceComponent } from './marketplace/marketplace.component';
-import { AlbumDetailComponent } from './album-detail/album-detail.component';
+import { ParallaxBannerComponent } from './parallax-banner/parallax-banner.component';
+import { FooterComponent } from './footer/footer.component';
+import { NewsComponent } from './news/news.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
@@ -62,16 +61,15 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    WelcomeComponent,
-    AboutComponent,
-    MarketplaceComponent,
-    AlbumDetailComponent
+    ParallaxBannerComponent,
+    FooterComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
+    MDBBootstrapModule.forRoot(),
     FormsModule,
     HttpModule,
-    routing,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule
   ],
@@ -79,6 +77,7 @@ export const firebaseConfig = {
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
 ```
 * _Return to your Firebase console, and go to the Database section. Select Realtime Database, and click on the Rules tab. Switch the "false" values to "true" on both properties (as seen below):_
 ```
@@ -89,6 +88,9 @@ export class AppModule { }
   }
 }
 ```
+* _$firebase login (this will take you to the login page for Firebase)_
+* _$firebase init (this will take you through a series of questions, say yes to all of them)_
+* _$firebase deploy_
 * _$ng serve --o (this will automatically open the page)_
 
 ## Specs
