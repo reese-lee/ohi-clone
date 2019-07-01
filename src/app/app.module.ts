@@ -30,8 +30,8 @@ import { NewsComponent } from './news/news.component';
 //   }
 // }
 import { masterFirebaseConfig } from './api-keys';
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -52,7 +52,7 @@ export const firebaseConfig = {
     MDBBootstrapModule.forRoot(),
     FormsModule,
     HttpModule,
-    AngularFireModule,
+    AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule
   ],
   providers: [],
